@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@500&family=DM+Serif+Display&family=Domine:wght@600&family=Merriweather:ital,wght@1,700&family=Open+Sans:ital,wght@1,800&family=Oswald:wght@300&family=Poppins&family=Roboto+Slab:wght@200&family=Work+Sans:wght@500&display=swap');
+
+* {
+  font-family: 'Roboto Slab', serif;
+  
+}
+
+body {
+  margin: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; */
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: black;
+  /* background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%); */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  /* background-color: #f60a0a; */
+  color: white;
+  position: relative; /* Add relative positioning */
+  background-image: linear-gradient(to right top, #f21026, #f6003b, #f9004d, #f90060, #f81271);
+}
+
+.logo {
+  font-size: 20px;
+}
+
+/* Desktop navigation links */
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  width: 75%;
+}
+
+/* Common navigation link styles */
+.home,
+.skill,
+.contact,
+.about {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif */
+}
+
+/* Mobile menu icon */
+.mobile-menu-icon {
+  display: none;
+}
+
+/* Media query for mobile layout */
+@media screen and (max-width: 780px) {
+  .logo {
+      position: absolute;
+      /* top: 40%; */
+      left: 10%;
+      /* transform: translate(-50%, -50%); */
+  }
+
+  .nav-links {
+      display: none;
+  }
+
+  /* Adjusted styles for mobile navigation */
+  .nav-links-mobile {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-image: linear-gradient(to right top, #f21026, #f6003b, #f9004d, #f90060, #f81271);
+      /* opacity: 0.80; */
+      list-style: none;
+      text-align: center;
+      /* padding: 10px 0; */
+      transition: all 1.5s ease-out;
+      z-index: 1;
+  }
+  /* Adjusted styles for mobile navigation links */
+  .home,
+  .skill,
+  .about,
+  .contact {
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      display: block;
+  }
+  .home:hover,
+  .skill:hover,
+  .contact:hover,
+  .about:hover {
+  color: #fff;
+  font-size: 25px; /* Increase font size on hover */
+}
+
+  /* Mobile menu icon styles */
+  .mobile-menu-icon {
+      display: block;
+      position: absolute;
+      font-size: 30px;
+      color: white;
+      background: transparent;
+      border: none;
+      outline: none;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+  }
+}
+
+.card-content{
+  background-image: linear-gradient(to right top, #14080d, #12080b, #100709, #0d0708, #0a0707);
+}
+
+.table-class{
+  background-image: linear-gradient(to right top, #93c0d3, #8eb8db, #95aedf, #a7a1dd, #bf92d0);
+  border-radius: 5px;
+}
+
+.white-color{
+  color:white
+}
