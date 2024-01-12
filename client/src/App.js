@@ -19,7 +19,7 @@ function App() {
         {/* <Header /> */}
         <Navbar/>
         <Routes>
-          <Route path='' element={<Home />}></Route>
+          <Route path='/' element={<Home />}></Route>
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/book-ticket" element = {<ProtectedRoutes><ProtectedRoutesBook><BookTicket/></ProtectedRoutesBook></ProtectedRoutes>}></Route>
