@@ -24,7 +24,7 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await axios.post("http://localhost:8027/api/v1/user/register", {
+      const { data } = await axios.post("https://movie-ticket-booking-mern-app.onrender.com/api/v1/user/register", {
         username: inputs.name,
         email: inputs.email,
         password: inputs.password,

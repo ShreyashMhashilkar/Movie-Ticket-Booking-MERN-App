@@ -40,7 +40,7 @@ const Payment = () => {
         // e.preventDefault();
         // console.log(inputs);
         try {
-          const { data } = await axios.post("http://localhost:8027/api/v1/order/create-order", {
+          const { data } = await axios.post("https://movie-ticket-booking-mern-app.onrender.com/api/v1/order/create-order", {
             name: orderItem[0][0].name,
             seat:seat,
             total:orderItem[0].total,

@@ -8,7 +8,7 @@ const UserOrder = () => {
   const getUserOrder = async () => {
     try {
       const id = localStorage.getItem("userId");
-      const { data } = await axios.get(`http://localhost:8027/api/v1/order/user-order/${id}`);
+      const { data } = await axios.get(`https://movie-ticket-booking-mern-app.onrender.com/api/v1/order/user-order/${id}`);
       console.log(data)
       if (data?.success) {
         setOrders(data?.userOrder.order);
